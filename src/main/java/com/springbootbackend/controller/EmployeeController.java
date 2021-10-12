@@ -20,7 +20,6 @@ import com.springbootbackend.repository.ProjectRepository;
 
 @RestController
 @RequestMapping("/")
-@SessionAttributes({"name" ,"email", "password","employeeId"})
 public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;

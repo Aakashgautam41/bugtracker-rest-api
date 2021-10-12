@@ -43,7 +43,7 @@ public class TicketController {
 		return ticketList; 
 	}
 	
-	// get individual ticket of a project
+	// create new ticket for a project
 	@PostMapping("/projects/{projectId}/createTicket")
 	public Ticket postCreateTicket(@PathVariable("projectId") int projectId, Ticket ticket,
 			@RequestParam String title, 

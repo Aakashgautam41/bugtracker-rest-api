@@ -5,12 +5,10 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.springbootbackend.model.Project;
 import com.springbootbackend.repository.ProjectRepository;
 
@@ -19,7 +17,7 @@ import com.springbootbackend.repository.ProjectRepository;
 public class ProjectController {
 	@Autowired
 	private ProjectRepository projectRepository;
-
+	
 	// get all projects
 	@GetMapping("/projects")
 	public List<Project> getAllProjects(){
